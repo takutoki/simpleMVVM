@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B10C20322BE17FD003ADA49 /* ValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10C20122BE17FD003ADA49 /* ValidationViewController.swift */; };
+		5B10C20422BE17FD003ADA49 /* ValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B10C20222BE17FD003ADA49 /* ValidationViewController.xib */; };
+		5B10C20622BE18EF003ADA49 /* ValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10C20522BE18EF003ADA49 /* ValidationViewModel.swift */; };
+		5B10C20822BE18FC003ADA49 /* ValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10C20722BE18FC003ADA49 /* ValidationModel.swift */; };
+		5B10C20B22BE3FF4003ADA49 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10C20A22BE3FF4003ADA49 /* ValidationError.swift */; };
 		5BF4639122BDF93B00751ED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4639022BDF93B00751ED3 /* AppDelegate.swift */; };
-		5BF4639322BDF93B00751ED3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4639222BDF93B00751ED3 /* ViewController.swift */; };
 		5BF4639822BDF93C00751ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4639722BDF93C00751ED3 /* Assets.xcassets */; };
 		5BF4639B22BDF93C00751ED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4639922BDF93C00751ED3 /* LaunchScreen.storyboard */; };
 		5BF463A622BDF93C00751ED3 /* simpleMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF463A522BDF93C00751ED3 /* simpleMVVMTests.swift */; };
@@ -37,9 +41,13 @@
 
 /* Begin PBXFileReference section */
 		509797AF14D06BF38E027C46 /* Pods_simpleMVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simpleMVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B10C20122BE17FD003ADA49 /* ValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewController.swift; sourceTree = "<group>"; };
+		5B10C20222BE17FD003ADA49 /* ValidationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValidationViewController.xib; sourceTree = "<group>"; };
+		5B10C20522BE18EF003ADA49 /* ValidationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewModel.swift; sourceTree = "<group>"; };
+		5B10C20722BE18FC003ADA49 /* ValidationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationModel.swift; sourceTree = "<group>"; };
+		5B10C20A22BE3FF4003ADA49 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		5BF4638D22BDF93B00751ED3 /* simpleMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF4639022BDF93B00751ED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BF4639222BDF93B00751ED3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5BF4639722BDF93C00751ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BF4639A22BDF93C00751ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BF4639C22BDF93C00751ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,9 +108,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5B10C20922BE3F80003ADA49 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5B10C20A22BE3FF4003ADA49 /* ValidationError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		5BA4428422BDFD6B00FAE5A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5B10C20722BE18FC003ADA49 /* ValidationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +127,7 @@
 		5BA4428522BDFD7500FAE5A0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5B10C20522BE18EF003ADA49 /* ValidationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -117,7 +135,8 @@
 		5BA4428622BDFD8200FAE5A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5BF4639222BDF93B00751ED3 /* ViewController.swift */,
+				5B10C20122BE17FD003ADA49 /* ValidationViewController.swift */,
+				5B10C20222BE17FD003ADA49 /* ValidationViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +166,7 @@
 		5BF4638F22BDF93B00751ED3 /* simpleMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				5B10C20922BE3F80003ADA49 /* Common */,
 				5BA4428622BDFD8200FAE5A0 /* View */,
 				5BA4428522BDFD7500FAE5A0 /* ViewModel */,
 				5BA4428422BDFD6B00FAE5A0 /* Model */,
@@ -295,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF4639B22BDF93C00751ED3 /* LaunchScreen.storyboard in Resources */,
+				5B10C20422BE17FD003ADA49 /* ValidationViewController.xib in Resources */,
 				5BF4639822BDF93C00751ED3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,8 +434,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF4639322BDF93B00751ED3 /* ViewController.swift in Sources */,
+				5B10C20822BE18FC003ADA49 /* ValidationModel.swift in Sources */,
+				5B10C20B22BE3FF4003ADA49 /* ValidationError.swift in Sources */,
+				5B10C20622BE18EF003ADA49 /* ValidationViewModel.swift in Sources */,
 				5BF4639122BDF93B00751ED3 /* AppDelegate.swift in Sources */,
+				5B10C20322BE17FD003ADA49 /* ValidationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

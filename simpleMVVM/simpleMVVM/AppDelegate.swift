@@ -20,9 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func setupFirstViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController()
+        window?.rootViewController = roorViewController
         window?.makeKeyAndVisible()
         window?.backgroundColor = .white
+    }
+
+    private var roorViewController: UIViewController {
+        let viewController = ValidationViewController()
+        return viewController
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
